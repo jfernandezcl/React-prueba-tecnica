@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 const CAT_ENDPOINT_RANDOM_FACT = 'https://catfact.ninja/fact'
 //const CAT_ENDPOINT_IMAGE_URL = https://cataas.com/cat/says/${firtsWord}?fontSize=50&fontColor=red&json=true
 
+//seguir ejercicio
 
 
 export function App () {
