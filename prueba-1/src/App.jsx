@@ -1,22 +1,18 @@
-import { useState, useEffect } from "react";
+import { useFetch } from "../useFetch";
 import "./App.css";
 
-export function App () {
-	const [data, setData] = useState();
 
 
 
-	useEffect (() => {
-		fetch("https://jsonplaceholder.typicode.com/users")
-		.then(response => response.json())
-		.then(data => setData(data))
-	},[]);
 
+
+export function App(){
+	const { data } = useFetch("https://jsonplaceholder.typicode.com/users")
 
 	return (
 		<main>
 			
-			<h1 className="title">Fetch Like a PRO</h1>
+			<h1 className="title ">Fetch Like a PRO</h1>
 
 			<section>
 			<ul className="list">
@@ -28,7 +24,10 @@ export function App () {
 		
 		</main>
 	);
+
+
 }
+
 
 
 
