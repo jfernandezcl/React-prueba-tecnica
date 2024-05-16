@@ -1,30 +1,27 @@
-
-
-
-
-main{
+.containerTitle{
     display: flex;
-    flex-direction: column;
-    place-items: center;
-    background-color: gray;
-
+    justify-content: center;
+    margin: 0 16rem;
 }
 
-.title {
-    color: azure;
+.title{
     background-color: black;
-    background-clip: content-box;
+    color: white;
     padding: 24px;
-    width: 300px;
-    text-align: center;
-    border-radius: 40px;
+}
+
+.containerList{
+    display: flex;
+    justify-content: center;
+    border: 4px solid black;
+    margin: 0 16rem;
 }
 
 .list{
-    border: 4px solid black;
-    border-radius: 40px;
-    width: 300px;
-    text-align: center;
-    list-style-type: none;
-    padding: 24px;
+    list-style: none;    
 }
+
+
+
+
+
