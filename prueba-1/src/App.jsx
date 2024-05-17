@@ -1,19 +1,20 @@
-import { useFetch } from "../useFetch";
+import { useDatosAPI } from "./hooks/useDatosAPI";
+import { Title } from "./components/Title/Title";
+import { ListOfUsers } from "./components/ListOfUsers/ListOfUsers";
 import "./App.css";
+
 export function App() {
-  const { data } = useFetch("https://jsonplaceholder.typicode.com/users");
+  const { data } = useDatosAPI("https://jsonplaceholder.typicode.com/users");
 
   return (
     <main>
       <div>
-        <h1>Data API name</h1>
+        <Title title={"Data API name"} />
       </div>
       <section>
-        <ul>
-          {data?.map((user) => (
-            <li key={user.id}>{user.name}</li>
-          ))}
-        </ul>
+        <div className="user-container">
+          <ListOfUsers data={data} />
+        </div>
       </section>
     </main>
   );

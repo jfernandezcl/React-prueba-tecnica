@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f9f6f3;
+}
+html{
+    font-family: sans-serif;
+}
+ol, ul{
+    list-style: none;
+   padding: 0;
+
+}
