@@ -1,8 +1,6 @@
-import { useEffect, useState } from "react";
-
+import { useState, useEffect } from "react";
 export function useFetch(url) {
   const [data, setData] = useState();
-
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
